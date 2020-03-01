@@ -17,16 +17,12 @@ A curated list of iOS objective-C ecosystem.
 期待大家和我们一起共同维护，同时也期望大家随时能提出宝贵的意见（直接提交issues即可）。请广大网友只按照目录结构（即使目录结构有问题）添加三方库，并提交pull request。目录问题大家提出issues后楼主会及时更改的。
 
 ## 目录
-- [Swift学习资料@](#swift学习资料)
- - [Swift小Demo@](#Swift小Demo)
 - [完整App@](#完整app)
 - [App框架@](#app框架)
   - [响应式框架@](#响应式框架)
   - [页面路由@](#页面路由)
   - [版本管理@](#版本管理)
   - [混合开发@](#混合开发)
-  - [设计模式@](#设计模式)
-  - [runtime@](#rumtime@)
 - [安全@](#安全)
 - [网络@](#网络)
   - [网络请求@](#网络请求)
@@ -34,18 +30,15 @@ A curated list of iOS objective-C ecosystem.
   - [网络聊天@](#网络聊天)
   - [网络测试@](#网络测试)
   - [网页框架@](#网页框架)
-  - [NetworkExtension@](#NetworkExtension)
   - [网络解析@](#网络解析)
-      - [CSV](#csv)
       - [JSON@](#json)
       - [xml@](#xml)
-  - [WebView@](#webview)
+      - [CSV@](#csv)
 - [数据存储@](#数据存储)
   - [缓存处理@](#缓存处理)
   - [CoreData@](#CoreData)
   - [数据库@](#数据库)
   - [钥匙链@](#钥匙链)
-- [AutoLayout@](#autolayout)
 - [多线程@](#多线程)
 - [多媒体@](#多媒体)
   - [相机@](#相机)
@@ -76,16 +69,19 @@ A curated list of iOS objective-C ecosystem.
  - [文本@](文本)
  - [字体@](字体)
 - [UI@](#ui)
+  - [AutoLayout@](#autolayout)
   - [列表@](#列表)
   - [scrollView@](#scrollView)
+  - [HUD与Toast@](#hud与toast)
   - [图表@](#图表)
+  - [IM@](#IM)
+  - [WebView@](#webview)
   - [日历@](#日历)
   - [时间@](#时间)
   - [下拉刷新@](#下拉刷新)
   - [模糊效果@](#模糊效果)
   - [选择器@](#选择器)
   - [隐藏与显示@](#隐藏与显示)
-  - [HUD与Toast@](#hud与toast)
   - [对话框@](#对话框)
   - [pop@](#pop)
   - [导航栏@](#导航栏)
@@ -100,14 +96,17 @@ A curated list of iOS objective-C ecosystem.
   - [搜索@](#搜索)
   - [Button@](#Button)
   - [3D@](#3D)
+  - [Slider@](#Slider)
   - [其他UI@](#其他ui)
 - [工具@](#工具)
   - [Category@](#category)
   - [Color@](#Color)
   - [Xcode工具@](#Xcode工具)
+  - [压缩解压@](#压缩解压)
 - [测试调试@](#测试调试)
   - [分析@](#分析)
   - [优化@](#优化)
+  - [日志@](#日志)
 - [游戏@](#游戏)
 - [小样@](#小样)
   - [VR@](#VR)
@@ -120,47 +119,22 @@ A curated list of iOS objective-C ecosystem.
   - [地图@](#地图)
   - [通知@](#通知)
   - [电池@](#电池)
-- [开发资料@](#开发资料)
-  - [播客@](#播客)
-  - [其他开源总结@](#其他开源总结)
-  - [设计@](#设计)
-  - [好的文章@](#好的文章)
-- [iOS版本变化@](#iOS版本变化)
-  - [iOS11@](#iOS11)
+- [Swift学习资料@](#swift学习资料)
+  - [Swift小Demo@](#Swift小Demo)
+- [其他开源总结@](#其他开源总结)
+- [iOS版本适配@](#iOS版本适配)
 - [其他库@](#其他库)
 - [AppleWatch@](#applewatch)
+- [TV@](#TV)
 - [mac@](#mac)
 - [服务端@](#服务端)
 
 -------
 具体内容
 
-#### Swift学习资料@
+#### rumtime@
 
-* [swift-evolution](https://github.com/apple/swift-evolution) Swift更新日志
-* [SwiftGuide](https://github.com/ipader/SwiftGuide) - 这份文档汇集了Swift 开源精选资源，思维导图形式呈现.
-* [SwiftGuide](https://github.com/ipader/SwiftGuide) 很赞 这份指南汇集了Swift语言主流学习资源，并以开发者的视角整理编排-- 非常不错，值得推荐。
-* [leetcode](https://leetcode.com/accounts/login/) 一个练习、评估自己水平的代码平台，跟ACM有点类似
-* [Swift中文指南](https://github.com/numbbbbb/the-swift-programming-language-in-chinese) - 中文版Apple官方Swift教程《The Swift Programming Language》，[老码版本](https://numbbbbb.gitbooks.io/-the-swift-programming-language-/content/)  [历史版本更新说明](https://numbbbbb.gitbooks.io/-the-swift-programming-language-/content/chapter1/03_revision_history.html)。
-* [iOS-Swift-Demos](https://github.com/Lax/iOS-Swift-Demos) 精心收集并分类整理的Swift开发学习资源，包括Apple官方提供的示例代码和文档，以及github上的项目和国内外开发者的技术博客。欢迎提交pull-request一起维护。[iOS Swift Demos from Apple] http://blog.liulantao.com/SwiftBeginnersGuide/
-* [Swift 开源项目精选－v1.0](http://dev.swiftguide.cn/archive/featured-open-source-projects-in-swift_v1.0.html) - Swift 开源项目精选－v1.0.
-* [The Swift Programming Language 中文版](http://wiki.jikexueyuan.com/project/swift/) - The Swift Programming Language 中文版。
-* [swifttoolbox](http://www.swifttoolbox.io/) -  swifttoolbox swift开发的开源库汇总。
-* [Awesome Swift](https://swift.zeef.com/robin.eggenkamp) - 一个收集了很多 Swift 开发资源的网站。
-* [Developing_iOS_8_Apps_With_Swift](https://github.com/CS193P-Translation-Group/Developing_iOS_8_Apps_With_Swift) - Developing iOS 8 Apps with Swift 字幕简体中文翻译项目（斯坦福白胡子老头swift教学视频）.
-* [Swift-On-iOS](https://github.com/johnlui/Swift-On-iOS) - JohnLui 的 Swift On iOS 代码仓库.
-* [30DaysofSwift](https://github.com/allenwong/30DaysofSwift) - 30DaysofSwift 自学 iOS - [三十天三十个 Swift 项目](http://weibo.com/ttarticle/p/show?id=2309403942494873235448).
-* [MySampleCode](https://github.com/bestswifter/MySampleCode) Swift的一些Demo.
-* [iOS与swift学习之路](https://toutiao.io/subjects/35291#187)
-* [iOS-Weekly](https://github.com/SwiftOldDriver/iOS-Weekly) - 老司机 iOS 周报.
-
-#### Swift小Demo@
-
-* [MTSwift-Learning](https://github.com/MartinRGB/MTSwift-Learning) - 通过一些简单项目实战演练开始学习 Swift 。
-* [iOS8-day-by-day](https://github.com/shinobicontrols/iOS8-day-by-day) - swift。
-* [iOS9-day-by-day](https://github.com/shinobicontrols/iOS9-day-by-day) - swfit [iOS9 Day-by-Day :: Day 2 :: UI Testing](http://www.jianshu.com/p/039f8de6ee4d)。
-* [iOS 9 分屏多任务](http://www.cocoachina.com/ios/20150714/12557.html) - iOS 9 分屏多任务：Slide Over & Split View快速入门（中文版）。
-* [uistackview-sample.swift](https://github.com/uraimo/uistackview-sample) - iOS 9 引进了 UIStackViews，提供 auto-layout 特性。如果你开发过 Android 应用，会发现它和 LinearLayouts 概念上很类似，它是增强版。你可以手动创建，也可以使用 IB 自动创建，本文用的是代码实现。
+* [swift-corelibs-foundation](https://github.com/apple/swift-corelibs-foundation/) - CFRunLoopRef源码.
 
 #### 完整App@
 
@@ -203,12 +177,15 @@ A curated list of iOS objective-C ecosystem.
 * [cnode-swift](https://github.com/nswbmw/cnode-swift) - iOS 上更好用的 CNode 客户端.
 * [Postal](https://github.com/snipsco/Postal) A swift framework for working with emails,Postal is a swift framework providing simple access to common email providers.
 * [LBXMLYFM-Swift](https://github.com/lb2281075105/LBXMLYFM-Swift) - 仿写喜马拉雅App.
+* [ios-mail](https://github.com/ProtonMail/ios-mail) - iOS-mail — ProtonMail iOS client app.
 
 #### App框架@
 
 * [katana-swift](https://github.com/BendingSpoons/katana-swift) - Swift Apps in a Swoosh! A modern framework for creating iOS apps, inspired by React and Redux. http://katana.bendingspoons.com
 * [SlackKit](https://github.com/SlackKit/SlackKit) SlackKit makes it easy to build Slack apps in Swift.
 * [Lona](https://github.com/airbnb/Lona) - A tool for defining design systems and using them to generate cross-platform UI code, Sketch files, images, and other artifacts.
+* [ReSwift](https://github.com/ReSwift/ReSwift) - ReSwift 是一个轻量级的框架，能够帮助你很轻松的去构建一个 Redux 架构的app.
+* [Lotusoot](https://github.com/Vegetarians/Lotusoot) - 灵活的 Swift 组件通信和路由工具.
 * [katana-swift](https://github.com/BendingSpoons/katana-swift)一个用于编写iOS应用程序的现代Swift框架，灵感来自React和Redux。 Swift Apps in a Swoosh! A modern framework for creating iOS apps, inspired by React and Redux.
 * [SwiftyMocky](https://github.com/MakeAWishFoundation/SwiftyMocky) - Framework for mock generation.
 * [Flix](https://github.com/DianQK/Flix) - 快速搭建列表类界面的框架.
@@ -218,6 +195,8 @@ A curated list of iOS objective-C ecosystem.
 * [Alicerce](https://github.com/Mindera/Alicerce) - A base for iOS Applications made with ❤️ by Mindera 🤠.
 * [EasyReact](https://github.com/meituan/EasyReact) - Are you confused by the functors, applicatives, and monads in RxSwift and ReactiveCocoa? It doesn't matter, the concepts are so complicated that not many developers actually use them in normal projects. Is there an easy-to-use way to use reactive programming? EasyReact is born for this reason.
 * [react-native-maps](https://github.com/react-community/react-native-maps) - React Native Mapview component for iOS + Android.
+* [Receiver](https://github.com/RuiAAPeres/Receiver) - Swift µframework implementing the Observer pattern 📡 .
+* [Hanson](https://github.com/blendle/Hanson) - 轻量级的KVO
 
 #### 响应式框架@
 
@@ -226,10 +205,12 @@ A curated list of iOS objective-C ecosystem.
 * [RxPermission.swift](https://github.com/sunshinejr/RxPermission) - 通过绑定 RxSwift 实现的 RxPermission。
 * [ReactiveAnimation](https://github.com/ReactiveCocoa/ReactiveAnimation) - ReactiveCocoa 推出了一个叫 ReactiveAnimation 的子项目，直接用完全用 Swift 来实现了。
 * [Swiftest](https://github.com/bppr/Swiftest) - BDD 全称 Behavior Driven Development，行为驱动开发。各种 DD 数不胜数，孰优孰劣争论不休，其实归根结底还是要根据使用场景进行选择。
+* [SemanticUI](https://github.com/aaronbrethorst/SemanticUI) - Semantic UI 是一套开源的 CSS 与 JavaScript 框架，提供了一些设计好的界面组件，你可以在项目里直接使用这些组件。它还提供了一套很方便的定制主题的方法，你可以用自己的想法去改变界面组件的样式。在这个教程里我们学习一下安装 Semantic UI.
 
 #### 页面路由@
 
 * [ACRouter](https://github.com/Archerlly/ACRouter) - Swift版页面路由, 组件化过程中快速页面解耦.
+* [routing-kit](https://github.com/vapor/routing-kit) - routing-kit.
 
 #### 版本管理@
 
@@ -242,15 +223,6 @@ A curated list of iOS objective-C ecosystem.
 * [SwiftPython](https://github.com/johnno1962/SwiftPython) - Experiments in bridging Swift to Python.
 * [hera](https://github.com/weidian-inc/hera) - Hera 是一个用小程序方式来写跨平台应用的开发框架，使用它可以让你的小程序除了在微信上运行，还可以打包成 Android 、 iOS应用，以及以h5的方式跑在浏览器端.
 
-#### 设计模式@
-
-* [Receiver](https://github.com/RuiAAPeres/Receiver) - Swift µframework implementing the Observer pattern 📡 .
-* [Hanson](https://github.com/blendle/Hanson) 轻量级的KVO
-
-#### rumtime@
-
-* [swift-corelibs-foundation](https://github.com/apple/swift-corelibs-foundation/) CFRunLoopRef源码.
-
 #### 安全@
 
 * [PermissionScope](https://github.com/nickoneill/PermissionScope) - PermissionScope 是一个 Swift 框架，为了向用户巧妙地请求权限。它不只包含简单的权限请求 UI，还有统一的权限 API 可以告诉你任意给定的系统权限的状态，当然也可以轻松地请求它们.
@@ -261,6 +233,8 @@ A curated list of iOS objective-C ecosystem.
 * [Permission.swift](https://github.com/delba/Permission) - 统一的 API 请求 iOS 本地设备及资源权限类库。
 * [Proposer](https://github.com/nixzhu/Proposer) - Proposer 用单个 API 处理 iOS 上的权限请求，以便使用前确认可访问“相册”、“相机”、“麦克风”、“通讯录”或“用户位置”.
 * [OAuthSwift](https://github.com/OAuthSwift/OAuthSwift) - OAuthSwift国外主流网站OAuth授权类库。
+* [KeychainAccess](https://github.com/kishikawakatsumi/KeychainAccess) - Simple Swift wrapper for Keychain that works on iOS, watchOS, tvOS and macOS
+* [AppAuth-iOS](https://github.com/openid/AppAuth-iOS) - iOS and macOS SDK for communicating with OAuth 2.0 and OpenID Connect providers. 用于iOS和MacOS的OAuth和OpenID Connect客户端.
 
 
 #### 网络@
@@ -269,6 +243,7 @@ A curated list of iOS objective-C ecosystem.
 * [Alamofire](https://github.com/Alamofire/Alamofire) - 非常赞👍👍👍 Alamofire是AFNetworking的作者mattt新写的网络请求的swift库。[Alamofire 最佳实践](https://github.com/ipader/SwiftGuide/wiki/Alamofire%20%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5)
 * [Moya](https://github.com/Moya/Moya) - 对Alamofire的封装，使用枚举将网络层实现细节与页面逻辑代码分离，方便单元测试，支持stub测试，配合RxSwift食用更佳，[博客教程](http://www.hmttommy.com/2015/12/15/Moya/)
 * [Hedwig](https://github.com/onevcat/Hedwig) - 提供了一组高级 API，可以让你轻松地发送电子邮件到SMTP服务器。如果你打算在下一个神奇的 Swift 服务器 app里发送 email，Hedwig 可能是一个好的选择.
+* [swift-nio](https://github.com/apple/swift-nio) - 苹果开源的一个事件驱动的非阻塞的网络框架，用来写高性能网络应用.
 * [SwiftRouter](https://github.com/skyline75489/SwiftRouter) - A URL Router for iOS, written in Swift 2.2 :large_orange_diamond:
 * [AlamofireObjectMapper.swift](https://github.com/tristanhimmelman/AlamofireObjectMapper) - 将Alamofire JSON响应数据 转为swift对象。
 * [RxAlamofire.swift](https://github.com/RxSwiftCommunity/RxAlamofire) - 为Alamofire提供函数响应式（FRP）调用接口,以优雅的方式使用Alamofire进行网络请求。
@@ -293,17 +268,14 @@ A curated list of iOS objective-C ecosystem.
 * [Frisbee](https://github.com/ronanrodrigo/Frisbee) - Another network wrapper for URLSession. Built to be simple, small and easy to create tests at the network layer of your application.
 * [Restofire](https://github.com/Restofire/Restofire) - Restofire is a protocol oriented network abstraction layer in swift that is built on top of Alamofire to use services in a declartive way.
 * [SolarNetwork](https://github.com/ThreeGayHub/SolarNetwork) - 基于Alamofire封装，揉和了Alamofire和Moya两者优点的一套简单易用的网络库。
-
-#### 网络聊天@
-
-* [MessageKit.swift](https://github.com/MessageKit/MessageKit) - 消息 UI 库 JSQMessagesViewController 的 Swift 版。
-* [jchat-swift](https://github.com/jpush/jchat-swift) - 一个聊天 App,具有完备的即时通讯功能,JChat 的功能基于极光 JMessage SDK 来开发。
+* [socket.io-client-swift](https://github.com/socketio/socket.io-client-swift) - socket.
 
 #### 网络测试@
 
-* [Reachability.swift](https://github.com/ashleymills/Reachability.swift) - 用于替换苹果的 Reachability 类，可以方便地检测当前是否联网以及具体的联网状态。
-* [NetReachability](https://github.com/crazypoo/SimpleCarrie) - swift2.0 简单的方法检查网络连接的连通性，提供通知中心集成接口。
-* [SimpleBS.swift](https://github.com/bin1991/SimpleBS) - 网络测试小工具。
+* [Reachability.swift](https://github.com/ashleymills/Reachability.swift) - 用于替换苹果的 Reachability 类，可以方便地检测当前是否联网以及具体的联网状态.
+* [NetReachability](https://github.com/crazypoo/SimpleCarrie) - swift2.0 简单的方法检查网络连接的连通性，提供通知中心集成接口.
+* [SimpleBS.swift](https://github.com/bin1991/SimpleBS) - 网络测试小工具.
+* [NEKit](https://github.com/zhuhaow/NEKit) - 一个网络扩展工具库,A toolkit for Network Extension Framework.
 
 #### 网页框架@
 
@@ -314,22 +286,13 @@ A curated list of iOS objective-C ecosystem.
 * [NetworkObjects.swift](https://github.com/colemancda/NetworkObjects) - NetworkObjects.swift轻量版HttpServer框架，跨平台解决方案。
 * [Kitura.swift](https://github.com/IBM-Swift/Kitura) - Kitura.swift：安装、使用步骤及文档最为清晰地来自 IBM Swift 开发组的开源 Web 服务器。此外，IBM 云服务 Bluemix 也为 Swift 打开通路。
 
-#### NetworkExtension@
-
-* [NEKit](https://github.com/zhuhaow/NEKit) 一个网络扩展工具库,A toolkit for Network Extension Framework
-* [SpechtLite](https://github.com/zhuhaow/SpechtLite) A rule-based proxy for macOS
-
 #### 网络解析@
-
-##### CSV@
-
-* [CSwiftV](https://github.com/Daniel1of1/CSwiftV) - A csv parser written in swift conforming to rfc4180 :large_orange_diamond:
-* [SwiftCSV](https://github.com/naoty/SwiftCSV) - CSV parser for Swift :large_orange_diamond:
 
 ##### Json@
 
 * [SwiftyJSON](https://github.com/SwiftyJSON/SwiftyJSON) - The better way to deal with JSON data in Swift. :large_orange_diamond:.
 * [ObjectMapper](https://github.com/Hearst-DD/ObjectMapper) - 很赞 ObjectMapper 是一个基于 Swift 语言开发的能够让 JSON 与 Object 之间轻易转换的类库。通过 ObjectMapper 我们可以将 JSON 数据转换成 Model 对象或将 Model 对象转换成 JSON 数据。 Simple JSON Object mapping written in Swift.
+* [Mantle](https://github.com/Mantle/Mantle) - Model framework for Cocoa and Cocoa Touch.
 * [Decodable](https://github.com/Anviking/Decodable) - Swift 2 JSON parsing done (more) right :large_orange_diamond:.
 * [Jay](https://github.com/czechboy0/Jay) - Pure-Swift JSON parser & formatter. Linux & OS X ready. :large_orange_diamond:.
 * [XMLDictionary](https://github.com/nicklockwood/XMLDictionary) - ios与mac os平台下xml与NSDictionary相互转化开源类库.
@@ -362,20 +325,14 @@ A curated list of iOS objective-C ecosystem.
 * [FeedKit](https://github.com/nmdias/FeedKit) - An RSS and Atom feed parser written in Swift :large_orange_diamond:
 * [typewriter](https://github.com/typwr/typewriter) - 客户端翻译服务端数据交换格式的代码翻译器.
 
+##### CSV@
+
+* [CSwiftV](https://github.com/Daniel1of1/CSwiftV) - A csv parser written in swift conforming to rfc4180 :large_orange_diamond:
+* [SwiftCSV](https://github.com/naoty/SwiftCSV) - CSV parser for Swift :large_orange_diamond:
+
 #### xml@
 
 * [AEXML](https://github.com/tadija/AEXML) - Simple and lightweight XML parser written in Swift. :large_orange_diamond:
-
-#### WebView@
-
-* [IOSCallJsOrJsCallIOS](https://github.com/CoderJackyHuang/IOSCallJsOrJsCallIOS) - IOSCallJsOrJsCallIOS：利用iOS7.0后出来的JavaScriptCore framework，webview与Js交互是常见的需求。OC版本与swift版本。[《OC JavaScriptCore与js交互》](http://www.henishuo.com/oc-js/),[《Swift JavaScriptCore与js交互》](http://www.henishuo.com/swift-js/)。
-* [WKWebViewTestDemo.swift](https://github.com/CoderJackyHuang/WKWebViewTestDemo) - WKWebViewTestDemo：WKWebView新特性及JS交互,[文章讲解](http://www.henishuo.com/wkwebview-js/)。
-* [React.swift](https://github.com/alexdrone/Render) - 启发自 React 的纯 Swift 函数版基于 UIKit 封装类库。这种结构是否似曾相识。
-* [GRMustache](https://github.com/groue/GRMustache) 一个类似templateEngine的html渲染工具，可以更加有效的帮助大家完成数据生成HTML的过程。
-* [MarkdownView](https://github.com/keitaoouchi/MarkdownView) Markdown View for iOS. MarkdownView is a WKWebView based UI element, and internally use bootstrap, highlight.js, markdown-it.
-* [swift-deep-linking](https://github.com/ijoshsmith/swift-deep-linking) 深度链接 A simple way to consume custom deep link URLs in a Swift app
-* [highlight](https://github.com/taggon/highlight) Rich featured syntax highlighter for Keynote slides.
-* [WKZombie](https://github.com/mkoehnke/WKZombie) - WKZombie is a Swift framework for iOS/OSX to navigate within websites and collect data without the need of User Interface or API, also known as Headless browser. It can be used to run automated tests or manipulate websites using Javascript. :large_orange_diamond:
 
 #### 数据存储@
 
@@ -427,27 +384,16 @@ A curated list of iOS objective-C ecosystem.
 * [Perfect](https://github.com/PerfectlySoft/Perfect) project, but stand-alone. SPM and Swift 3 support.
 * [MySQL](https://github.com/PerfectlySoft/Perfect-MySQL) - A Swift wrapper around the MySQL client library, enabling access to MySQL servers. Part of the
 * [Redis](https://github.com/PerfectlySoft/Perfect-Redis) - A Swift wrapper around the Redis client library, enabling access to Redis. Part of the
+* [PostgresApp](https://github.com/PostgresApp/PostgresApp) - 以加州大学伯克利分校计算机系开发的 POSTGRES，现在已经更名为PostgreSQL，版本 4.2为基础的对象关系型数据库管理系统（ORDBMS).
 * [PostgreSQL](https://github.com/PerfectlySoft/Perfect-PostgreSQL) - A Swift wrapper around the libpq client library, enabling access to PostgreSQL servers. Part of the
 * [FileMaker](https://github.com/PerfectlySoft/Perfect-FileMaker) - A Swift wrapper around the FileMaker XML Web publishing interface, enabling access to FileMaker servers. Part of the
 * [AppFolder](https://github.com/dreymonde/AppFolder) - Never use NSSearchPathForDirectoriesInDomains again.
+* [GRDB.swift](https://github.com/groue/GRDB.swift) - A toolkit for SQLite databases, with a focus on application development.
 
 #### 钥匙链@
 
 * [EllipticCurveKeyPair](https://github.com/agens-no/EllipticCurveKeyPair) - Sign, verify, encrypt and decrypt using the Secure Enclave.
-
-#### AutoLayout@
-
-* [Snap](https://github.com/SnapKit/SnapKit) - Snap是Masonry Auto Layout DSL的Swift版本，是一款轻量级的布局框架，使用了更良好的语法封装了AutoLayout。Snap支持iOS和OS X.
-* [Cartography](https://github.com/robb/Cartography) - 一个很赞的Auto Layout库.
-* [Neon](https://github.com/mamaral/Neon) - 功能强大的 UI 布局神器.
-* [TinyConstraints](https://github.com/roberthein/TinyConstraints) - TinyConstraints is the syntactic sugar that makes Auto Layout sweeter for human use.
-* [EasyPeasy](https://github.com/nakiostudio/EasyPeasy) - 编程方式自动布局框架库.
-* [TangramKit](https://github.com/youngsoft/TangramKit) - TangramKit is a powerful iOS UI framework implemented by Swift. It integrates the functions with Android layout,iOS AutoLayout,SizeClass, HTML CSS float and flexbox and bootstrap. So you can use LinearLayout,RelativeLayout,FrameLayout,TableLayout,FlowLayout,FloatLayout,LayoutSizeClass to build your App 自动布局 UIView UITableView UICollectionView.
-* [layout](https://github.com/schibsted/layout) - A declarative UI framework for iOS.
-* [CassowarySwift](https://github.com/tribalworldwidelondon/CassowarySwift) - A Swift port of the Cassowary linear constraint solver.
-* [Windless](https://github.com/Interactive-Studio/Windless) - Windless makes it easy to implement invisible layout loading view.
-* [KeyboardLayoutGuide](https://github.com/freshOS/KeyboardLayoutGuide) - ⌨️ Apple's missing KeyboardLayoutGuide.
-* [Yalta](https://github.com/kean/Yalta) - An intuitive and powerful Auto Layout library.
+* [keychain-swift](https://github.com/evgenyneu/keychain-swift) - Helper functions for saving text in Keychain securely for iOS, OS X, tvOS and watchOS.
 
 #### 多媒体@
 #### 相机@
@@ -572,7 +518,7 @@ A curated list of iOS objective-C ecosystem.
 * [ZoomTransition](https://github.com/tristanhimmelman/ZoomTransition) - swift, 通过手势操控图片的放大、缩小、旋转等自由变化效果的组件及示例。
 * [AFImageHelper](https://github.com/melvitax/AFImageHelper) - swift,一套针对 UIImage 和 UIImageView 的实用扩展库，功能包含填色和渐变、裁剪、缩放以及具有缓存机制的在线图片获取。
 * [PinterestSwift](https://github.com/demonnico/PinterestSwift) - swift,Pinterest 风格图片缩放、切换示例。
-* [Nuke.swift](https://github.com/kean/Nuke) - 完整、强大、实用的图片管理类库。主要功能包括可定制装载，缓存，滤镜及尺寸变换。
+* [Nuke.swift](https://github.com/kean/Nuke) - 完整、强大、实用的图片管理类库，主要功能包括可定制装载，缓存，滤镜及尺寸变换。
 * [SwViewCapture.swift](https://github.com/startry/SwViewCapture) - SwViewCapture.swift一个用起来还不错的iOS截图库.(支持截取所有内容, 适用于所有ScrollView组成的视图, 包括WebView)
 * [CartoonEyes.swift](https://github.com/FlexMonkey/CartoonEyes) - 前置摄像头捕获图像后，采用 Core Image 脸部识别 CIDetector 和漫画效果滤镜复合出卡通效果眼睛。
 
@@ -593,6 +539,7 @@ A curated list of iOS objective-C ecosystem.
 * [Navi](https://github.com/nixzhu/Navi) - 头像缓存.
 * [Imaginary](https://github.com/hyperoslo/Imaginary) - 远程图片异步下载，缓存.
 * [Vulcan](https://github.com/jinSasaki/Vulcan) - 带有优先级的多图下载.
+* [url-image](https://github.com/dmytro-anokhin/url-image) - Asynchronous image loading in SwiftUI. SwiftUI Image view that displays an image downloaded from URL, with cache and filters.
 
 #### 图像浏览@
 
@@ -629,6 +576,7 @@ A curated list of iOS objective-C ecosystem.
 
 * [swift-algorithm-club](https://github.com/raywenderlich/swift-algorithm-club) - 很多流行的算法和数据结构的具体实现，非常赞👍👍👍 .
 * [SwiftSortedList](https://github.com/bemindinteractive/SwiftSortedList) - A sorted list implementation written in Swift :large_orange_diamond:
+* [LeetCode-Swift](https://github.com/soapyigu/LeetCode-Swift) - Solutions to LeetCode by Swift.
 * [BTree](https://github.com/attaswift/BTree) - Fast ordered collections for Swift using in-memory B-trees :large_orange_diamond:
 * [SwiftStructures](https://github.com/waynewbishop/SwiftStructures) - Examples of commonly used data structures and algorithms in Swift. :large_orange_diamond:
 * [diff](https://github.com/soffes/diff) - Simple diff library in pure Swift :large_orange_diamond:
@@ -643,7 +591,7 @@ A curated list of iOS objective-C ecosystem.
 #### 数学@
 
 * [Surge.swift](https://github.com/mattt/Surge) - Surge.swift基于苹果Accelerate高性能计算数学框架封装库.
-
+* [swift-numerics](https://github.com/apple/swift-numerics) - 苹果出品的Numerical APIs for Swift.
 
 #### 动画@
 
@@ -731,6 +679,7 @@ A curated list of iOS objective-C ecosystem.
 #### 富文本@
 
 * [RichEditorView](https://github.com/cjwirth/RichEditorView) - swift，一套可定制富文本编辑器组件及示例。功能完整、代码简练、实现逻辑巧妙（编辑器核心与 WebView 结合，采用 HTML5 contentEditable 编辑模式，执行JS 配套命令 execCommand 实现富文本编辑功能）。
+* [Ink](https://github.com/JohnSundell/Ink) - A fast and flexible Markdown parser written in Swift.
 * [SwiftyMarkdown.swift](https://github.com/SimonFairbairn/SwiftyMarkdown) - 用swift写的markdown解析库。
 * [Marklight.swift](https://github.com/macteo/Marklight) - Markdown 语法高亮显示编辑库（Swift）。
 * [LTMorphingLabel](https://github.com/lexrus/LTMorphingLabel) - swift 能够实现文字变形动画效果的Label，用Swift写的一个能够实现文字变形动画效果的Label，很炫。
@@ -759,6 +708,20 @@ A curated list of iOS objective-C ecosystem.
 * [Material](https://github.com/CosmicMind/Material) - A UI/UX framework for creating beautiful applications.
 * [IBLinter](https://github.com/kateinoigakukun/IBLinter) - A linter tool for Interface Builder.
 
+#### AutoLayout@
+
+* [Snap](https://github.com/SnapKit/SnapKit) - Snap是Masonry Auto Layout DSL的Swift版本，是一款轻量级的布局框架，使用了更良好的语法封装了AutoLayout。Snap支持iOS和OS X.
+* [Cartography](https://github.com/robb/Cartography) - 一个很赞的Auto Layout库.
+* [Neon](https://github.com/mamaral/Neon) - 功能强大的 UI 布局神器.
+* [TinyConstraints](https://github.com/roberthein/TinyConstraints) - TinyConstraints is the syntactic sugar that makes Auto Layout sweeter for human use.
+* [EasyPeasy](https://github.com/nakiostudio/EasyPeasy) - 编程方式自动布局框架库.
+* [TangramKit](https://github.com/youngsoft/TangramKit) - TangramKit is a powerful iOS UI framework implemented by Swift. It integrates the functions with Android layout,iOS AutoLayout,SizeClass, HTML CSS float and flexbox and bootstrap. So you can use LinearLayout,RelativeLayout,FrameLayout,TableLayout,FlowLayout,FloatLayout,LayoutSizeClass to build your App 自动布局 UIView UITableView UICollectionView.
+* [layout](https://github.com/schibsted/layout) - A declarative UI framework for iOS.
+* [CassowarySwift](https://github.com/tribalworldwidelondon/CassowarySwift) - A Swift port of the Cassowary linear constraint solver.
+* [Windless](https://github.com/Interactive-Studio/Windless) - Windless makes it easy to implement invisible layout loading view.
+* [KeyboardLayoutGuide](https://github.com/freshOS/KeyboardLayoutGuide) - ⌨️ Apple's missing KeyboardLayoutGuide.
+* [Yalta](https://github.com/kean/Yalta) - An intuitive and powerful Auto Layout library.
+
 #### 列表@
 #### TableView、CollectionView、表相关、即时聊天UI等
 
@@ -771,6 +734,7 @@ A curated list of iOS objective-C ecosystem.
 * [COBezierTableView](https://github.com/knutigro/COBezierTableView) - swift，通过编辑 Bezier 曲线四点位置设置 TableView 内 Cell 及对应按扭位置。实验效果很赞。
 * [LxTabBarController](https://github.com/DeveloperLx/LxTabBarController) - 改变了原生tabbar切换tab时的生硬效果，并加入滑动切换手势（有和界面上的其它手势发生冲突的风险，可根据具体项目予以关闭），[swift版本](https://github.com/DeveloperLx/LxTabBarController-swift).
 * [ABExpandableView](https://github.com/alicanbatur/ABExpandableView) - Expandable, collapsible, filterable and single/multi selectable table view.
+* [RxDataSources](https://github.com/RxSwiftCommunity/RxDataSources) - UITableView and UICollectionView Data Sources for RxSwift (sections, animated updates, editing ...).
 * [Cards](https://github.com/PaoloCuscela/Cards) - Awesome iOS 11 appstore cards in swift 4.
 * [Sapporo](https://github.com/nghialv/Sapporo) - swift 单元格模型驱动的集合视图管理器组件。又一个超实用的“轮子”.
 * [NavTopImage](https://github.com/itjhDev/NavTopImage) - NavigationController动态缩放titleView.
@@ -792,10 +756,20 @@ A curated list of iOS objective-C ecosystem.
 * [TiltedTabView](https://github.com/IMcD23/TiltedTabView) - iOS control to replicate the tab switcher in Safari for iOS.
 * [TabView](https://github.com/IMcD23/TabView) - Easily add multiple tabs to your iOS app, styled similar to Safari for iPad.
 * [Parade](https://github.com/HelloElephant/Parade) - Parallax Scroll-Jacking Effects Engine for iOS / tvOS.
+* [MagazineLayout](https://github.com/airbnb/MagazineLayout) - A collection view layout capable of laying out views in vertically scrolling grids and lists.
 
 #### scrollView@
 
 * [ScrollableGraphView](https://github.com/philackm/ScrollableGraphView) - 自适应滚动视图的图表控件.
+
+#### HUD与Toast@
+
+* [SwiftProgressHUD](https://github.com/stackhou/SwiftProgressHUD) -SwiftProgressHUD is a user-friendly pure swift HUD. 支持Cocoapods 及 Carthage.
+* [SwiftEntryKit](https://github.com/huri000/SwiftEntryKit) - SwiftEntryKit is a banner presenter library for iOS. It can be used to easily display pop-ups and notification-like views within your iOS apps.
+* [InputBarAccessoryView](https://github.com/nathantannar4/InputBarAccessoryView) - A simple and easily customizable InputAccessoryView for making message input bars! As featured in MessageKit.
+* [Toast-Swift](https://github.com/scalessec/Toast-Swift) - 高可定制易用的 Toast 弹出信息或通知用户界面组件类.
+* [SkeletonView](https://github.com/Juanpe/SkeletonView) - An elegant way to show users that something is happening and also prepare them to which contents he is waiting.
+* [StatusAlert](https://github.com/LowKostKustomz/StatusAlert) - Display Apple system-like self-hiding status alerts. It is well suited for notifying user without interrupting user flow in iOS-like way.
 
 #### 图表@
 
@@ -804,6 +778,22 @@ A curated list of iOS objective-C ecosystem.
 * [SpreadsheetView](https://github.com/kishikawakatsumi/SpreadsheetView) - 很棒👍 的电子表格库. 可以完全配置的电子表格View,使用此库你能很容易的创建出复杂布局的表格，比如时间表、甘特图、课程表，就像你使用Excel一样.
 * [Scrollable-GraphView.swift](https://github.com/philackm/Scrollable-GraphView) - 灵动感十足的自适应、可定制滚动曲（折）线图表库.
 * [SwiftChart](https://github.com/gpbl/SwiftChart) - Line and area chart library for iOS.
+
+#### IM@
+
+* [MessageKit.swift](https://github.com/MessageKit/MessageKit) - 消息 UI 库 JSQMessagesViewController 的 Swift 版。
+* [jchat-swift](https://github.com/jpush/jchat-swift) - 一个聊天 App,具有完备的即时通讯功能,JChat 的功能基于极光 JMessage SDK 来开发。
+
+#### WebView@
+
+* [IOSCallJsOrJsCallIOS](https://github.com/CoderJackyHuang/IOSCallJsOrJsCallIOS) - IOSCallJsOrJsCallIOS：利用iOS7.0后出来的JavaScriptCore framework，webview与Js交互是常见的需求。OC版本与swift版本。[《OC JavaScriptCore与js交互》](http://www.henishuo.com/oc-js/),[《Swift JavaScriptCore与js交互》](http://www.henishuo.com/swift-js/)。
+* [WKWebViewTestDemo.swift](https://github.com/CoderJackyHuang/WKWebViewTestDemo) - WKWebViewTestDemo：WKWebView新特性及JS交互,[文章讲解](http://www.henishuo.com/wkwebview-js/)。
+* [React.swift](https://github.com/alexdrone/Render) - 启发自 React 的纯 Swift 函数版基于 UIKit 封装类库。这种结构是否似曾相识。
+* [GRMustache](https://github.com/groue/GRMustache) 一个类似templateEngine的html渲染工具，可以更加有效的帮助大家完成数据生成HTML的过程。
+* [MarkdownView](https://github.com/keitaoouchi/MarkdownView) Markdown View for iOS. MarkdownView is a WKWebView based UI element, and internally use bootstrap, highlight.js, markdown-it.
+* [swift-deep-linking](https://github.com/ijoshsmith/swift-deep-linking) 深度链接 A simple way to consume custom deep link URLs in a Swift app
+* [highlight](https://github.com/taggon/highlight) Rich featured syntax highlighter for Keynote slides.
+* [WKZombie](https://github.com/mkoehnke/WKZombie) - WKZombie is a Swift framework for iOS/OSX to navigate within websites and collect data without the need of User Interface or API, also known as Headless browser. It can be used to run automated tests or manipulate websites using Javascript. :large_orange_diamond:
 
 #### 日历@
 
@@ -828,7 +818,6 @@ A curated list of iOS objective-C ecosystem.
 * [pull-to-refresh.swift](https://github.com/eggswift/pull-to-refresh) - 是一款非常易于开发者使用的下拉刷新和加载更多组件。通过一个 UIScrollView 的扩展，可以轻松为 UIScrollView 的所有子类添加下拉刷新功能。
 * [GSRefresh](https://github.com/wxxsw/GSRefresh) 完全自定义视图和动画的下拉刷新、上拉加载库，易扩展。
 
-
 #### 模糊效果@
 
 * [Blurable.swift](https://github.com/FlexMonkey/Blurable) - swift模糊组件。
@@ -838,17 +827,6 @@ A curated list of iOS objective-C ecosystem.
 * [AGCircularPicker](https://github.com/agilie/AGCircularPicker) - AGCircularPicker is helpful component for creating a controller aimed to manage any calculated parameter.
 * [McPicker](https://github.com/kmcgill88/McPicker-iOS) - A customizable, closure driven UIPickerView drop-in solution with animations that is rotation ready. :large_orange_diamond:
 * [Mandoline](https://github.com/blueapron/Mandoline) - An iOS picker view to serve all your "picking" needs.
-
-#### 隐藏与显示@
-
-#### HUD与Toast@
-
-* [SwiftProgressHUD](https://github.com/stackhou/SwiftProgressHUD) -SwiftProgressHUD is a user-friendly pure swift HUD. 支持Cocoapods 及 Carthage.
-* [SwiftEntryKit](https://github.com/huri000/SwiftEntryKit) - SwiftEntryKit is a banner presenter library for iOS. It can be used to easily display pop-ups and notification-like views within your iOS apps.
-* [InputBarAccessoryView](https://github.com/nathantannar4/InputBarAccessoryView) - A simple and easily customizable InputAccessoryView for making message input bars! As featured in MessageKit.
-* [Toast-Swift](https://github.com/scalessec/Toast-Swift) - 高可定制易用的 Toast 弹出信息或通知用户界面组件类.
-* [SkeletonView](https://github.com/Juanpe/SkeletonView) - An elegant way to show users that something is happening and also prepare them to which contents he is waiting.
-* [StatusAlert](https://github.com/LowKostKustomz/StatusAlert) - Display Apple system-like self-hiding status alerts. It is well suited for notifying user without interrupting user flow in iOS-like way.
 
 #### 对话框@
 
@@ -869,6 +847,7 @@ A curated list of iOS objective-C ecosystem.
 
 * [alerts-and-pickers](https://github.com/dillidon/alerts-and-pickers) - Advanced usage of UIAlertController and pickers based on it: Telegram, Contacts, Location, PhotoLibrary, Country, Phone Code, Currency, Date...
 * [panelkit](https://github.com/louisdh/panelkit) - 手势拖动弹出面板视图 A UI framework that enables panels on iOS.
+* [FloatingPanel](https://github.com/SCENEE/FloatingPanel) - 易于使用的浮动面板UI组件.
 * [ElongationPreview](https://github.com/Ramotion/elongation-preview) - 一个优雅的push-pop风格的视图控制器  ElongationPreview is an elegant push-pop style view controller with 3D-Touch support and gestures. :large_orange_diamond:
 * [PopupWindow](https://github.com/shin8484/PopupWindow) - PopupWindow is a simple Popup using another UIWindow in Swift.
 * [Pageboy](https://github.com/MerrickSapsford/Pageboy) -  一个简单、易学的page View Controller A simple, highly informative page view controller. :large_orange_diamond:
@@ -911,6 +890,7 @@ A curated list of iOS objective-C ecosystem.
 * [MZGuidePages](https://github.com/MachelleZhang/MZGuidePages) - 自己写的通用导航页，可以直接引入工程使用，请参考案例（版本新特性、导航页、引导页）.
 * [Intro](https://github.com/nbolatov/Intro) - 简单的功能引导组件.
 * [Wizardry.swift](https://github.com/ijoshsmith/Wizardry) - 可重用的方法和框架实现向导式用户界面管理。（版本新特性、导航页、引导页）.
+* [liquid-swipe](https://github.com/Cuberto/liquid-swipe) - Cuberto is a leading digital agency with solid design and development expertise. We build mobile and web products for startups. Drop us a line.
 
 #### page@
 
@@ -946,6 +926,10 @@ A curated list of iOS objective-C ecosystem.
 #### 3D@
 
 * [Euclid](https://github.com/nicklockwood/Euclid) - A Swift library for creating and manipulating 3D geometry.
+
+#### Slider@
+
+* [Sliders](https://github.com/SwiftUIExtensions/Sliders) - SwiftUI Sliders with custom styles.
 
 #### 其他UI@
 
@@ -1014,8 +998,9 @@ A curated list of iOS objective-C ecosystem.
 #### Xcode工具@
 
 * [injectionforxcode](https://github.com/johnno1962/injectionforxcode) - Injection for Xcode：成吨的提高开发效率,[使用说明](http://www.jianshu.com/p/27be46d5e5d4).
+* [SwiftFormat](https://github.com/nicklockwood/SwiftFormat) - 用于重新格式化 Swift 代码的命令行工具.
 * [Reminders](https://github.com/tiagomartinho/Reminders) - Clean Architecture.
-* [SwiftGen](https://github.com/SwiftGen/SwiftGen) - The Swift code generator for your assets, storyboards, Localizable.strings, … — Get rid of all String-based APIs!.
+* [SwiftGen](https://github.com/SwiftGen/SwiftGen) - SwiftGen is a tool to auto-generate Swift code for resources of your projects, to make them type-safe to use.
 * [FileExplorer](https://github.com/Augustyniak/FileExplorer) - 完整的文件资源管理器组件.
 * [Drafter](https://github.com/L-Zephyr/Drafter) - 在iOS项目中自动生成类图和方法调用图 - Generate call graph in iOS project.
 * [Swimat](https://github.com/Jintin/Swimat) - Swimat，是一款Xcode 插件，帮你一键格式化 swift 代码.
@@ -1030,6 +1015,10 @@ A curated list of iOS objective-C ecosystem.
 * [MotherShip](https://github.com/thecb4/MotherShip) - iTunes Connect Library inspired by FastLane.
 * [FengNiao](https://github.com/onevcat/FengNiao) - 一个清理Xcode中没使用的资源文件的命令行工具.
 * [stylesync](https://github.com/dylanslewis/stylesync) - A command line tool to extract shared styles from a Sketch document, and generate native code for any platform.
+
+#### 压缩解压@
+
+* [Zip](https://github.com/marmelroy/Zip) - Swift framework for zipping and unzipping files.
 
 #### 测试调试@
 
@@ -1063,8 +1052,13 @@ A curated list of iOS objective-C ecosystem.
 * [Optimizing-Swift-Build-Times](https://github.com/fastred/Optimizing-Swift-Build-Times) - Collection of advice on optimizing compile times of Swift projects.
 * [Lotusoot](https://github.com/Vegetarians/Lotusoot) - 灵活的 Swift 组件解耦和通信工具.
 
+#### 日志@
+
+* [swift-log](https://github.com/apple/swift-log) - A Logging API for Swift.
+
 #### 游戏@
 
+* [FlappySwift](https://github.com/fullstackio/FlappySwift) - swift implementation of flappy bird.
 * [Legend-Wings](https://github.com/woguan/Legend-Wings) iOS Swift Game - Push SpriteKit to the limit
 
 #### 小样@
@@ -1101,8 +1095,10 @@ A curated list of iOS objective-C ecosystem.
 #### VPN@
 
 * [ShadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG) - Next Generation of ShadowsocksX.
+* [V2rayU](https://github.com/yanue/V2rayU) - V2rayU,基于v2ray核心的mac版客户端,用于科学上网,使用swift编写,支持vmess,shadowsocks,socks5等服务协议,支持订阅, 支持二维码,剪贴板导入,手动配置,二维码分享等.
 * [vpnon](https://github.com/lexrus/vpnon/) - swift的VPN On 的源码和本地化内容都是开放的: [官方网站](https://crowdin.com/project/vpnon).
 * [Potatso](https://github.com/haxpor/Potatso) - 一个实现Shadowsocks代理的客户端.
+* [mac-app](https://github.com/ProtonVPN/mac-app) - Official ProtonVPN macOS app.
 
 #### 蓝牙@
 
@@ -1112,12 +1108,12 @@ A curated list of iOS objective-C ecosystem.
 
 #### 地图@
 
-* [Cluster](https://github.com/efremidze/Cluster) 非常不错的地图标注聚合.
-* [ArcKit](https://github.com/sobri909/ArcKit) Location and activity recording framework for iOS
+* [Cluster](https://github.com/efremidze/Cluster) - 非常不错的地图标注聚合.
+* [ArcKit](https://github.com/sobri909/ArcKit) - Location and activity recording framework for iOS
 
 #### 通知@
 
-* [NotificationBanner](https://github.com/Daltron/NotificationBanner) 最容易的方法显示高度自定义的通知.
+* [NotificationBanner](https://github.com/Daltron/NotificationBanner) - 最容易的方法显示高度自定义的通知.
 * [Homeoff](https://github.com/lizyyy/Homeoff) - 用swift写了一个模仿Launcher通知中心快捷方式的应用。支持20个应用，并增加了一个返回到桌面来解放Home键的功能。
 * [SwiftNotificationCenter](https://github.com/100mango/SwiftNotificationCenter) - 一个面向协议的类型安全、线程安全、内存安全的通知中心。
 
@@ -1125,12 +1121,34 @@ A curated list of iOS objective-C ecosystem.
 
 * [DeviceKit](https://github.com/dennisweissmann/DeviceKit) - DeviceKit 是 UIDevice 的值类型替换。轻松获取设备信息和电池电量.
 
-#### 开发资料@
+#### Swift学习资料@
 
-#### 播客@
+* [swift-evolution](https://github.com/apple/swift-evolution) Swift更新日志
+* [SwiftGuide](https://github.com/ipader/SwiftGuide) - 这份文档汇集了Swift 开源精选资源，思维导图形式呈现.
+* [ioscreator](https://github.com/ioscreator/ioscreator) - Tutorials from ioscreator.com.
+* [SwiftGuide](https://github.com/ipader/SwiftGuide) 很赞 这份指南汇集了Swift语言主流学习资源，并以开发者的视角整理编排-- 非常不错，值得推荐。
+* [leetcode](https://leetcode.com/accounts/login/) 一个练习、评估自己水平的代码平台，跟ACM有点类似
+* [Swift中文指南](https://github.com/numbbbbb/the-swift-programming-language-in-chinese) - 中文版Apple官方Swift教程《The Swift Programming Language》，[老码版本](https://numbbbbb.gitbooks.io/-the-swift-programming-language-/content/)  [历史版本更新说明](https://numbbbbb.gitbooks.io/-the-swift-programming-language-/content/chapter1/03_revision_history.html)。
+* [iOS-Swift-Demos](https://github.com/Lax/iOS-Swift-Demos) 精心收集并分类整理的Swift开发学习资源，包括Apple官方提供的示例代码和文档，以及github上的项目和国内外开发者的技术博客。欢迎提交pull-request一起维护。[iOS Swift Demos from Apple] http://blog.liulantao.com/SwiftBeginnersGuide/
+* [Swift 开源项目精选－v1.0](http://dev.swiftguide.cn/archive/featured-open-source-projects-in-swift_v1.0.html) - Swift 开源项目精选－v1.0.
+* [The Swift Programming Language 中文版](http://wiki.jikexueyuan.com/project/swift/) - The Swift Programming Language 中文版。
+* [swifttoolbox](http://www.swifttoolbox.io/) -  swifttoolbox swift开发的开源库汇总。
+* [Awesome Swift](https://swift.zeef.com/robin.eggenkamp) - 一个收集了很多 Swift 开发资源的网站。
+* [Developing_iOS_8_Apps_With_Swift](https://github.com/CS193P-Translation-Group/Developing_iOS_8_Apps_With_Swift) - Developing iOS 8 Apps with Swift 字幕简体中文翻译项目（斯坦福白胡子老头swift教学视频）.
+* [Swift-On-iOS](https://github.com/johnlui/Swift-On-iOS) - JohnLui 的 Swift On iOS 代码仓库.
+* [30DaysofSwift](https://github.com/allenwong/30DaysofSwift) - 30DaysofSwift 自学 iOS - [三十天三十个 Swift 项目](http://weibo.com/ttarticle/p/show?id=2309403942494873235448).
+* [MySampleCode](https://github.com/bestswifter/MySampleCode) Swift的一些Demo.
+* [iOS与swift学习之路](https://toutiao.io/subjects/35291#187)
+* [iOS-Weekly](https://github.com/SwiftOldDriver/iOS-Weekly) - 老司机 iOS 周报.
+* [Mocker](https://github.com/WeTransfer/Mocker) - A simple mocker framework for Swift.
 
-* [Swift Playhouse](http://www.swiftplayhouse.com/)
-* [Swift Unwrapped](https://spec.fm/podcasts/swift-unwrapped)
+#### Swift小Demo@
+
+* [MTSwift-Learning](https://github.com/MartinRGB/MTSwift-Learning) - 通过一些简单项目实战演练开始学习 Swift 。
+* [iOS8-day-by-day](https://github.com/shinobicontrols/iOS8-day-by-day) - swift。
+* [iOS9-day-by-day](https://github.com/shinobicontrols/iOS9-day-by-day) - swfit [iOS9 Day-by-Day :: Day 2 :: UI Testing](http://www.jianshu.com/p/039f8de6ee4d)。
+* [iOS 9 分屏多任务](http://www.cocoachina.com/ios/20150714/12557.html) - iOS 9 分屏多任务：Slide Over & Split View快速入门（中文版）。
+* [uistackview-sample.swift](https://github.com/uraimo/uistackview-sample) - iOS 9 引进了 UIStackViews，提供 auto-layout 特性。如果你开发过 Android 应用，会发现它和 LinearLayouts 概念上很类似，它是增强版。你可以手动创建，也可以使用 IB 自动创建，本文用的是代码实现。
 
 #### 其他开源总结@
 
@@ -1140,15 +1158,7 @@ A curated list of iOS objective-C ecosystem.
 * [swift-ui-animation-components-and-libraries](https://github.com/Ramotion/swift-ui-animation-components-and-libraries) - Swift UI libraries, iOS components and animations.
 * [top](https://github.com/app-developers/top) - Top App Developers - December 2018.
 
-#### 设计@
-#### 好的文章@
-
-* [RxSwift入坑手册](http://blog.callmewhy.com/2015/09/21/rxswift-getting-started-0/) - RxSwift入坑手册。
-* [Xcode使用技巧](http://www.jianshu.com/p/cda4b0fe07e0) - SwiftGG 交流分享：Xcode使用技巧。
-* [Swift编程的15个技巧](http://geek.csdn.net/news/detail/58593) - Swift编程的15个技巧。
-
-#### iOS版本变化@
-#### iOS11@
+#### iOS版本适配@
 
 * [iOS-11-by-Examples](https://github.com/artemnovichkov/iOS-11-by-Examples) Examples of new iOS 11 APIs.
 * [NotchKit](https://github.com/HarshilShah/NotchKit) A simple way to hide the notch on the iPhone X.
@@ -1232,6 +1242,10 @@ A curated list of iOS objective-C ecosystem.
 * [overlook](https://github.com/wess/overlook) 可以监测目标目录文件改变，执行对应命令的后台及命令行工具 The Judge, Jury and Executioner for the file system.
 * [CircularCrownSelector](https://github.com/mkchoi212/CircularCrownSelector) - watchOS UI for a circular selection menu.
 
+#### TV@
+
+* [PopcornTimeTV](https://github.com/PopcornTimeTV/PopcornTimeTV) - Popcorn Time for Apple TV 4, iPhone and iPad.
+
 #### mac@
 
 * [open-source-mac-os-apps](https://github.com/serhii-londar/open-source-mac-os-apps) - Awesome list of open source applications for macOS.
@@ -1240,11 +1254,15 @@ A curated list of iOS objective-C ecosystem.
 * [iina](https://github.com/lhc70000/iina) - The modern video player for macOS,非常👍👍👍 .
 * [mas](https://github.com/mas-cli/mas) - Mac App Store command line interface.
 * [iOSLocalizationEditor](https://github.com/igorkulman/iOSLocalizationEditor) - Simple macOS editor app to help you manage iOS app localizations by allowing you to edit all the translations side by side(一款在 macOS 上帮助用户编辑和管理 app localizations 的图形化工具，它会显示每种语言的所有本地化版本，并能方便快捷的找出你缺失的 key).
+* [AltStore](https://github.com/rileytestut/AltStore) - AltStore 是一个 iOS 应用程序，允许您仅使用 Apple ID 将其他应用程序（.ipa 文件）侧面加载到您的 iOS 设备上.
 * [swift14macOSApps](https://github.com/KrisYu/swift14macOSApps) - 几个Mac小Demo.
 * [SpotMenu](https://github.com/kmikiy/SpotMenu) - 菜单栏中的Spotify和iTunes.
 * [xi-mac](https://github.com/google/xi-mac) - The xi editor project is an attempt to build a high quality text editor.
 * [mas](https://github.com/mas-cli/mas) - 📦 Mac App Store command line interface.
+* [Dozer](https://github.com/Mortennn/Dozer) - Hide status bar icons on macOS.
 * [fsnotes](https://github.com/glushchenko/fsnotes) - Notes manager for macOS/iOS.
+* [SidecarPatcher](https://github.com/pookjw/SidecarPatcher) - Enables Sidecar on old Mac and iPad for macOS 10.15.
+* [SpechtLite](https://github.com/zhuhaow/SpechtLite) - A rule-based proxy for macOS.
 
 #### game@
 
@@ -1257,8 +1275,9 @@ A curated list of iOS objective-C ecosystem.
 * [Httper-iOS](https://github.com/MuShare/Httper-iOS) - App for developers to test REST API. https://httper.mushare.cn.
 * [README.zh_CN.md](https://github.com/PerfectlySoft/Perfect/blob/master/README.zh_CN.md) - Swift 语言服务器端软件框架.
 * [PersistQL](https://github.com/PersistX/PersistQL) - Projection-based GraphQL Clients and Servers in Swift.
-* [Perfect](https://github.com/PerfectlySoft/Perfect) Server-side Swift. The Perfect core toolset and framework for Swift Developers. (For mobile back-end development, website and API development, and more…)
+* [Perfect](https://github.com/PerfectlySoft/Perfect) - Server-side Swift. The Perfect core toolset and framework for Swift Developers. (For mobile back-end development, website and API development, and more…)
 * [PerfectTemplate](https://github.com/PerfectlySoft/PerfectTemplate) Empty Starter Project (for Perfect).
 * [vapor](https://github.com/vapor/vapor) - A server-side Swift web framework.
-* [SwiftQ](https://github.com/John-Connolly/SwiftQ) SwiftQ is a distributed task queue for server side swift applications.
+* [SwiftQ](https://github.com/John-Connolly/SwiftQ) - SwiftQ is a distributed task queue for server side swift applications.
 * [SwiftServerSide-Vapor](https://github.com/Jinxiansen/SwiftServerSide-Vapor) - Swift server open source projects based on the Swift 4.1 and Vapor 3 frameworks. (Swift 服务端开源项目).
+* [http](https://github.com/vapor/http) -  Non-blocking, event-driven HTTP built on Swift NIO.
